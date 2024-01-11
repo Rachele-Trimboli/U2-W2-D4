@@ -1,0 +1,21 @@
+@import "./scss/functions";
+@import "./scss/variables";
+
+
+
+
+
+
+$new-purple: rgba(117,80,254,255);
+$new-green: #1acb98;
+
+$new-theme-colors: (
+  'purple': $new-purple,
+  'green': $new-green,
+  "arancio": #c28135,
+  "gray":#f5f4f8,
+  );
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import 'scss/bootstrap.scss';

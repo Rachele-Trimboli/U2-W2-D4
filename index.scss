@@ -1,0 +1,60 @@
+@import "./customize";
+@import "./mixin";
+
+
+#aside{
+    width: 90%;
+}
+
+.navbar-text{
+    i{
+        font-size: 1.5em;
+        margin-right: 8px;
+    }
+    img{
+        width: 50px;
+        @include border;
+    }
+};
+
+.bg-purple{
+    @include hero-flex
+
+};
+
+#heroimg{
+    width: 100%;
+};
+
+#underhero {
+    i{
+    @include underheroIcon;
+    font-size: 1.5em;
+    }
+
+    @include hero-flex;
+    justify-content: space-evenly
+    
+}
+
+.aside{
+    @include hero-flex;
+    justify-content: space-between;
+
+   
+}
+.bg-gray{
+    @include hero-flex
+}
+footer{
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5px;
+        li{
+            margin-left: 15px;
+        }
+    }
+}
